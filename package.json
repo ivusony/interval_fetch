@@ -1,0 +1,16 @@
+{
+  "name": "my-node-project",
+  "version": "1.0.0",
+  "description": "A simple Node.js project using node-fetch",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1",
+    "http-server": "^14.1.1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC"
+}
