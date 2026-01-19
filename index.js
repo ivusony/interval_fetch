@@ -26,7 +26,7 @@ async function main(
                 urlToFetch,
                 { 
                     method: 'GET',
-                    signal: AbortSignal.timeout( delay - 1000 ) // timeout malo manji od intervala
+                    signal: AbortSignal.timeout( delay > 2000 ? delay - 1000 : delay ) // timeout malo manji od intervala
                 }
             );
             return response.status;
@@ -74,10 +74,10 @@ async function main(
 
 
 main(
-    // delay u milisekundama
+    // delay u milisekundama. Default 4000ms
     4000,
-    // broj ponavljanja
-    20,
+    // broj ponavljanja. Default 20
+    10,
     // url koji se testira (dozvoljava cors)
     "https://httpbin.org/get"
 );
