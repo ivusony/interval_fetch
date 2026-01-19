@@ -78,6 +78,6 @@ main(
     4000,
     // broj ponavljanja. Default 20
     10,
-    // url koji se testira (dozvoljava cors)
+    // url koji se testira (dozvoljava cors). Default  "https://www.google.com" koji ne dozvoljava cors i baca gresku u browseru
     "https://httpbin.org/get"
 );
